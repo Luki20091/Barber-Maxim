@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="assets/images/favicon.png">
+        <title>Barber Maxim | Strona Główna</title>
+	    <meta name="description" content="Barber Shop Radom - przyjdź na męskie strzyżenie, golenie brzytwą, trymowanie brody w wyjątkowej atmosferze. Mikołaja Reja 23, Radom, zapraszamy.">
+	    <meta name="keywords" content="Radom, Barber, Strzyżenie męskie, Golenie, Broda, Maszynka, Trymowanie, Brzytwa, Masarz, Wosk"/>
+	    <meta name="author" content="Luki">
+	    <meta name="copyright" content="Copyright...">
+	
+        <link rel="stylesheet" type="text/css" href="assets/styles/index.css">
+        <script src="assets/scripts/pages.js"></script>
+        <script src="assets/scripts/onselect.js"></script>
+
+        <script src="https://kit.fontawesome.com/ac1b82ff7f.js" crossorigin="anonymous"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Iceberg&display=swap" rel="stylesheet">
+    </head>
+
+
+    <body>
+        <video autoplay muted loop>
+            <source src="assets/videos/background.mp4" type="video/mp4">
+        </video>
+        <header>
+            <div id="header-1">
+                <a onClick="openHome();"><img src="assets/images/logo.png"/>MAXIM.PL</a>
+            </div>
+            <div id="header-2">
+                <a id="voucher" onClick="openVoucher();"><i class="fa-solid fa-tag"></i>Voucher</a>
+                <a id="booking" onClick="openBooking();"><i class="fa-regular fa-calendar-check"></i>Zarezerwuj</a>
+            </div>
+        </header>
+
+
+
+        <menu>
+            <a id="home" class="active" onClick="openHome();"><i class="fa-solid fa-house"></i><span class="tooltip-text">&nbsp;Strona&nbsp;Główna&nbsp;</span></a>
+            <a id="us" onClick="openUs();"><i class="fa-solid fa-user"></i><span class="tooltip-text">&nbsp;O&nbsp;nas&nbsp;</span></a>
+            <a id="offer" onClick="openOffer();"><i class="fa-solid fa-scissors"></i><span class="tooltip-text">&nbsp;Oferty&nbsp;</span></a>
+            <a id="contact" onClick="openContact();"><i class="fa-solid fa-phone"></i><span class="tooltip-text">&nbsp;Kontakt&nbsp;</span></a>
+        </menu>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <content>
+            <div id="homeDiv" class="visible">
+                <h1>Strona Główna</h1>
+                <span>-------------------&nbsp;<i class="fa-solid fa-house"></i>&nbsp;-------------------</span>
+            </div>
+            <div id="usDiv">
+                <h1>O Nas</h1>
+                <span>-------------------&nbsp;<i class="fa-solid fa-user"></i>&nbsp;-------------------</span>
+            </div>
+            <div id="offerDiv">
+                <h1>Oferty</h1>
+                <span>-------------------&nbsp;<i class="fa-solid fa-scissors"></i>&nbsp;-------------------</span>
+            </div>
+            <div id="contactDiv">
+                <h1>Kontakt</h1>
+                <span>-------------------&nbsp;<i class="fa-solid fa-phone"></i>&nbsp;-------------------</span>
+            </div>
+            <div id="voucherDiv">
+                <h1>Voucher</h1>
+                <span>-------------------&nbsp;<i class="fa-solid fa-tag"></i>&nbsp;-------------------</span>
+            </div>
+            <div id="bookingDiv">
+                <h1>Zarezerwuj</h1>
+                <span>-------------------&nbsp;<i class="fa-regular fa-calendar-check"></i>&nbsp;-------------------</span>
+            </div>
+        </content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer>
+            <p>Copyright &copy; Barber Maxim.</p>
+            <p>Web developer: Luki</p>
+        </footer>
+    </body>
+</html>
