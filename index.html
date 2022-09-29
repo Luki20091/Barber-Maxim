@@ -13,6 +13,7 @@
         <link rel="stylesheet" type="text/css" href="assets/styles/index.css">
         <script src="assets/scripts/pages.js"></script>
         <script src="assets/scripts/onselect.js"></script>
+        <script src="assets/scripts/load.js"></script>
 
         <script src="https://kit.fontawesome.com/ac1b82ff7f.js" crossorigin="anonymous"></script>
 
@@ -22,7 +23,7 @@
     </head>
 
 
-    <body>
+    <body onload="IndexLoad()">
         <video autoplay muted loop>
             <source src="assets/videos/background-2.webm" type="video/webm">
         </video>
@@ -39,7 +40,7 @@
 
 
         <menu>
-            <a id="home" class="active" onClick="openHome();"><i class="fa-solid fa-house"></i><span class="tooltip-text">&nbsp;Strona&nbsp;Główna&nbsp;</span></a>
+            <a id="home" class="active" onClick="openHome();"><i class="fa-solid fa-house"></i><span class="tooltip-text">&nbsp;Strona&nbsp;Glowna&nbsp;</span></a>
             <a id="us" onClick="openUs();"><i class="fa-solid fa-user"></i><span class="tooltip-text">&nbsp;O&nbsp;nas&nbsp;</span></a>
             <a id="offer" onClick="openOffer();"><i class="fa-solid fa-scissors"></i><span class="tooltip-text">&nbsp;Oferty&nbsp;</span></a>
             <a id="contact" onClick="openContact();"><i class="fa-solid fa-phone"></i><span class="tooltip-text">&nbsp;Kontakt&nbsp;</span></a>
@@ -59,53 +60,119 @@
 
 
         <content>
-            <div id="homeDiv" class="visible">
-                <h1>Strona Główna</h1>
+            <div id="homeDiv">
+                <h1>STRONA&nbsp;GLOWNA</h1>
                 <hgrup>
                     <hr />
                     <i class="fa-solid fa-house"></i>
                     <hr />
                 </hgrup>
+                <h2>BARBER&nbsp;MAXIM&nbsp;RADOM&nbsp;- UL.&nbsp;MIKOLAJA&nbsp;REJA&nbsp;23</h2>
+                <p>Barber Maxim to miejsce w Radomiu stworzone z pasji do fryzjerstwa męskiego. Nasz barbershop to połączenie profesjonalnych technik strzyżeń męskich oferowanych w unikatowym salonie z duszą i klimatem staromiejskiego stylu. Najlepszy fryzjer męski w Radomiu – to cel, który przyświeca nam naszą codzienną pracę. Barber to osoba, która w męskim salonie fryzjerskim zaprezentuje najwyższej klasy kunszt pracy z zakresu strzyżeń włosów i brody. Dobry fryzjer to nie tylko profesjonalne rzemiosło, osoba taka będzie również Twoim stylistą, który pomoże w doborze najlepszej fryzury.</p>
+                <div class="list">
+                    <div>
+                        <h2>PON</h2>
+                        <p>9:00-15:00</p>
+                    </div>
+                    <div>
+                        <h2>WT</h2>
+                        <p>8:00-17:00</p>
+                    </div>
+                    <div>
+                        <h2>SR</h2>
+                        <p>8:00-17:00</p>
+                    </div>
+                    <div>
+                        <h2>CZW</h2>
+                        <p>8:00-17:00</p>
+                    </div>
+                    <div>
+                        <h2>PT</h2>
+                        <p>8:00-17:00</p>
+                    </div>
+                    <div>
+                        <h2>SOB</h2>
+                        <p>9:00-16:00</p>
+                    </div>
+                </div>
+                <br />
             </div>
             <div id="usDiv">
-                <h1>O Nas</h1>
+                <h1>O&nbsp;NAS</h1>
                 <hgrup>
                     <hr />
                     <i class="fa-solid fa-user"></i>
                     <hr />
                 </hgrup>
+                <h2>KIM&nbsp;JESTESMY&nbsp;- CZYM&nbsp;SIE&nbsp;ZAJMUJEMY?</h2>
+                <p>MAXIM to barber shop w Radomiu stworzony z myślą o Was – naszych Klientach. Wieloletnie doświadczenie w branży fryzjerskiej pozwala nam zaoferować usługi na najwyższym poziomie. Strzyżenia męskie to nasza pasja – wykonujemy je z dbałością o każdy szczegół, nadając fryzurze odpowiedni kształt i styl. Zadbamy również o pielęgnację zarostu i brody, usługę trymowania wykonamy z perfekcyjną dokładnością. Oprócz profesjonalnych usług barberskich służymy radą jak na co dzień dbać o swoje włosy lub brodę. Podpowiemy jakich kosmetyków należy używać, by osiągnąć pożądany efekt stylizacji swojej fryzury. Czas spędzony w naszym salonie ma być chwilą relaksu i odprężenia podczas, gdy fachowcy będą zajmować się strzyżeniem włosów i brody. Męski salon fryzjerski usytuowany w ponad stuletniej kamienicy oddaje nietuzinkowy klimat wnętrza jaki chcieliśmy stworzyć w naszym barber shopie. To wszystko z myślą o Was i Waszych potrzebach. Serdecznie zapraszamy do Barberiady.
+                </p>
+                <br />
             </div>
             <div id="offerDiv">
-                <h1>Oferty</h1>
+                <h1>OFERTY</h1>
                 <hgrup>
                     <hr />
                     <i class="fa-solid fa-scissors"></i>
                     <hr />
                 </hgrup>
+                <div class="list2">
+                    <div>
+                        <h2>WLOSY</h2>
+                        <p>Strzyżenie: 60&nbsp;ZŁ</p>
+                        <p>Strzyżenie&nbsp;+&nbsp;Masaż: 70&nbsp;ZŁ</p>
+                        <p>Strzyżenie&nbsp;Dziecka: 50&nbsp;ZŁ</p>
+                        <p>Golenie&nbsp;Brzytwą: 60&nbsp;ZŁ</p>
+                        <p>Odswierzenie: 50&nbsp;ZŁ</p>
+                    </div>
+                    <div>
+                        <h2>BRODA</h2>
+                        <p>Trymowanie&nbsp;Brzytwą: 70&nbsp;ZŁ</p>
+                        <p>Trymowanie&nbsp;Maszynką: 60&nbsp;ZŁ</p>
+                        <p>Trymowanie&nbsp;+&nbsp;Masaż: 90&nbsp;ZŁ</p>
+                        <p>Golenie&nbsp;Brzytwą: 60&nbsp;ZŁ</p>
+                        <p>Odswierzenie: 40&nbsp;ZŁ</p>
+                    </div>
+                    <div>
+                        <h2>RAZEM</h2>
+                        <p>Combo: 100&nbsp;ZŁ</p>
+                        <p>Combo&nbsp;+&nbsp;Masaż: 120&nbsp;ZŁ</p>
+                        <p>Odswierzenie: 80&nbsp;ZŁ</p>
+                        <p>Układanie: 20&nbsp;ZŁ</p>
+                        <p>Wosk&nbsp;Nos/Uszy: 20&nbsp;ZŁ</p>
+                    </div>
+                </div>
+                <br />
             </div>
             <div id="contactDiv">
-                <h1>Kontakt</h1>
+                <h1>KONTAKT</h1>
                 <hgrup>
                     <hr />
                     <i class="fa-solid fa-phone"></i>
                     <hr />
                 </hgrup>
+                <h2>WYSLIJ&nbsp;NAM&nbsp;WIADOMOSC</h2>
+                <br />
             </div>
             <div id="voucherDiv">
-                <h1>Voucher</h1>
+                <h1>VOUCHER</h1>
                 <hgrup>
                     <hr />
                     <i class="fa-solid fa-tag"></i>
                     <hr />
                 </hgrup>
+                <h2>2</h2>
+                <br />
             </div>
             <div id="bookingDiv">
-                <h1>Zarezerwuj</h1>
+                <h1>ZAREZERWUJ</h1>
                 <hgrup>
                     <hr />
                     <i class="fa-regular fa-calendar-check"></i>
                     <hr />
                 </hgrup>
+                <h2>2</h2>
+                <br />
             </div>
         </content>
 
